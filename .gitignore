@@ -1,0 +1,11 @@
+# Demo demonstration data. Limits are illustrative and must not be used for real lifting operations.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.streamlit/secrets.toml
+.DS_Store
+.env.*
+venv/
+outputs/
