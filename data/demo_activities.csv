@@ -1,0 +1,2 @@
+activity,duration_hours,wind,gust,rain,daylight,notice
+Turbine installation,4,9,13,0.2,True,Generated demonstration data. Limits are illustrative and must not be used for real operations.
