@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><rect width="96" height="96" rx="23" fill="#0b2545"/><g fill="#ffffff"><path d="M46 39 48 10 54 12 52 39Z"/><path d="m48 42 28 12-4 6-26-13Z"/><path d="M47 44 23 62 19 56 44 39Z"/><path d="m46 47-3 34h12l-5-34Z"/></g><circle cx="48" cy="42" r="7" fill="#2989ff"/><path d="M24 82h49" stroke="#2989ff" stroke-width="4" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">WindPlan AI</title>
+  <desc id="desc">A white wind turbine with rotating blades and a softly pulsing blue hub on a navy background.</desc>
+  <style>
+    .rotor { transform-origin: 48px 45px; animation: turbine-spin 7s linear infinite; }
+    .halo { transform-origin: 48px 45px; animation: hub-pulse 3.6s ease-in-out infinite; }
+    @keyframes turbine-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes hub-pulse {
+      0%, 100% { transform: scale(0.85); opacity: 0.28; }
+      50% { transform: scale(1.18); opacity: 0.58; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rotor, .halo { animation: none; }
+    }
+  </style>
+  <defs>
+    <radialGradient id="hub-glow">
+      <stop offset="0" stop-color="#2989ff" stop-opacity="0.8"/>
+      <stop offset="0.55" stop-color="#2989ff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#2989ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="96" height="96" rx="23" fill="#0b2545"/>
+  <path d="m45 49-3 31h13l-5-31Z" fill="#ffffff"/>
+  <g class="rotor" fill="#ffffff">
+    <path d="M45 43 48 10 54 12 51 43Z"/>
+    <path d="m49 41 27 14-4 6-27-14Z"/>
+    <path d="m49 47-26 15-4-6 26-15Z"/>
+  </g>
+  <circle class="halo" cx="48" cy="45" r="18" fill="url(#hub-glow)" opacity="0.4"/>
+  <circle cx="48" cy="45" r="7" fill="#2989ff"/>
+  <path d="M25 82h46" stroke="#2989ff" stroke-width="4" stroke-linecap="round"/>
+</svg>
